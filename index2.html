@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dit Navn - CV og Projekter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+      margin: 0;
+    }
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+    }
+    .project-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+    .project {
+      width: calc(50% - 20px);
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+      box-sizing: border-box;
+    }
+    .project img {
+      max-width: 100%;
+      height: auto;
+    }
+    .btn-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .btn {
+      flex: 1;
+      margin: 0 5px;
+      padding: 5px;
+      background-color: #a363f1;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+    .cv {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+    }
+    .cv-info, .cv-image {
+      width: 48%;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+    .additional-boxes {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+    }
+    .dark-mode-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 5px 10px;
+      background-color: #a363f1;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+    .dark-mode .header {
+      background-color: #222;
+    }
+    .dark-mode .project {
+      background-color: #444;
+    }
+    .dark-mode .btn {
+      background-color: #a363f1;
+    }
+    .dark-mode .cv, .dark-mode .cv-info, .dark-mode .cv-image, .dark-mode .additional-boxes {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Dit Navn</h1>
+  <p>Din Profession</p>
+  <button class="dark-mode-toggle">Dark Mode</button>
+</div>
+
+<div class="project-container">
+  <div class="project">
+    <img src="projekt1.jpg" alt="Projekt 1">
+    <h2>Projekt 1 Titel</h2>
+    <p>Projekt 1 Beskrivelse</p>
+    <div class="btn-group">
+      <a class="btn" href="link_til_projekt1_hjemmeside">Gå til projektet</a>
+      <a class="btn" href="link_til_projekt1_github">GitHub</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <img src="projekt2.jpg" alt="Projekt 2">
+    <h2>Projekt 2 Titel</h2>
+    <p>Projekt 2 Beskrivelse</p>
+    <div class="btn-group">
+      <a class="btn" href="link_til_projekt2_hjemmeside">Gå til projektet</a>
+      <a class="btn" href="link_til_projekt2_github">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<div class="cv">
+  <div class="cv-info">
+    <!-- Info om dig -->
+  </div>
+  <div class="cv-image">
+    <!-- Billede af dig -->
+  </div>
+</div>
+
+<div class="additional-boxes">
+  <div class="additional-box-left">
+    <!-- Indhold til venstre boks -->
+  </div>
+  <div class="additional-box-right">
+    <!-- Indhold til højre boks -->
+  </div>
+</div>
+
+<script>
+  const darkModeToggle = document.querySelector(".dark-mode-toggle");
+  darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+</script>
+
+</body>
+</html>
